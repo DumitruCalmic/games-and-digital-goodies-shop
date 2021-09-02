@@ -13,6 +13,7 @@ class CreateArticlesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('articles');
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('title',255);
@@ -24,7 +25,7 @@ class CreateArticlesTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->timestamp('created_at');
 
-            $table->foreign('authors_id')
+            $table->foreign('author_id')
                    ->references('id')
                    ->on('authors')
                    ->onDelete('CASCADE')

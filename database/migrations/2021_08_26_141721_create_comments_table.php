@@ -13,6 +13,7 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('comments');
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->string('content');
@@ -20,7 +21,7 @@ class CreateCommentsTable extends Migration
             $table->unsignedBigInteger('article_id');
             $table->timestamps();
 
-            $table->foreign('authors_id')
+            $table->foreign('author_id')
                    ->references('id')
                    ->on('authors')
                    ->onDelete('CASCADE')
