@@ -11,14 +11,14 @@ class Comment extends Model
 
     protected $attributes = [
         'content'=>'A random name',
-        'author_id'=>'',
-        'article_id'=>'',
+        'author_id'=>'1',
+        'article_id'=>'1',
     ];
 
     protected $fillable = [
-        'content'=>'A random name',
-        'author_id'=>'',
-        'article_id'=>'',
+        'content',
+        'author_id',
+        'article_id',
     ];
 
     public function author()

@@ -11,10 +11,10 @@ class Article extends Model
 
     protected $attributes = [
         'title'=>'A random name',
-        'body'=>'',
-        'description'=>'',
-        'author_id'=>'',
-        'category_id'=>'',
+        'body'=>'aaaaaa',
+        'description'=>'asdsdsdsds',
+        'author_id'=>'1',
+        'category_id'=>'1',
     ];
 
     protected $fillable = [

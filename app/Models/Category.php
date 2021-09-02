@@ -11,7 +11,7 @@ class Category extends Model
     
     protected $attributes = [
         'name'=>'A random name',
-        'description'=>'',
+        'description'=>'category',
         'image'=>'',
     ];
 

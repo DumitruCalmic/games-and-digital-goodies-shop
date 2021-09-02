@@ -11,15 +11,15 @@ class Author extends Model
 
     protected $attributes = [
         'first_name'=>'A random name',
-        'last_name'=>'',
-        'email'=>'',
+        'last_name'=>'wwww',
+        'email'=>'adada@gmail.com',
     ];
 
     protected $fillable = [
-        'first_name'=>'A random name',
-        'last_name'=>'',
-        'email'=>'',
-        'phone'=>'',
+        'first_name',
+        'last_name',
+        'email',
+        'phone',
     ];
 
     public function comment()
