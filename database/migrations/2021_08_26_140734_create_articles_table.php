@@ -23,6 +23,18 @@ class CreateArticlesTable extends Migration
             $table->unsignedBigInteger('author_id');
             $table->unsignedBigInteger('category_id');
             $table->timestamp('created_at');
+
+            $table->foreign('authors_id')
+                   ->references('id')
+                   ->on('authors')
+                   ->onDelete('CASCADE')
+                   ->onUpdate('CASCADE');
+            
+            $table->foreign('category_id')
+                   ->references('id')
+                   ->on('categories')
+                   ->onDelete('CASCADE')
+                   ->onUpdate('CASCADE');       
         });
     }
 

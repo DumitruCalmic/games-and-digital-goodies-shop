@@ -18,7 +18,7 @@
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <nav class="navbar">
-            <a href="homepage">home</a>
+            <a href="/">home</a>
             <a href="categories">categories</a>
             <a href="blog-list">blog list</a>
             <a href="contact-us">contact</a>

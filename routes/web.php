@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactUsController;
 |
 */
 
-Route::get('/homepage', function () {
+Route::get('/', function () {
     return view('pages/homepage');
 
 });
@@ -50,3 +50,4 @@ Route::group(['prefix' => '/user'], function () {
     Route::get('/info/stored', ['uses' => UserInfoController::class . '@stored']);
 });
 
+Route::get('/category', [\App\Http\Controllers\CategoryController::class, 'create'])->name('contactUs.store');

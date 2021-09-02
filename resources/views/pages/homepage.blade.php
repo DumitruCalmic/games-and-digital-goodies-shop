@@ -1,9 +1,5 @@
 @extends('layouts.layout')
 
-<!-- slider section starts  -->
-
-<!-- slider section ends  -->
-
 <!-- home section starts  -->
 @section('header')
 <section class="home" id="home">
